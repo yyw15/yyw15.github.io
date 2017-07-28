@@ -1,0 +1,397 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#center{
+    position: relative;
+    width: 1000px;
+    height: 1500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#bg_main{
+    width: 1000px;
+    height: 1500px;
+    background: url(images/bg_mainscene.jpg) no-repeat left top;
+    background-size: 100% 100%;
+}
+
+#container{
+    position: absolute;
+    top: -800px;
+    left: 100px;
+	width: 800px;
+	height: 800px;
+	margin-right: 60px;
+	margin-bottom: 36px;
+	float: left;
+}
+
+#bg-container{
+	width: 100%;
+	height: 100%;
+}
+
+.star{
+	width: 80px;
+	height: 80px;
+	float: left;
+	box-sizing: border-box;
+	display: inline-block;
+	background-size: 100%;
+}
+
+#show{
+    position: absolute;
+    top: 400px;
+    left: 870px;
+    color: white;
+    font-family: 'KaiTi';
+    font-size: 52px;
+    z-index: 2;
+}
+
+#showTarget{
+    position: absolute;
+    top: 500px;
+    left: 1400px;
+    color: white;
+    font-family: 'KaiTi';
+    font-size: 52px;
+}
+
+.bshow{
+    position: absolute;
+    top: 48px;
+    left: 260px;
+    font-family: 'KaiTi';
+    font-size: 44px;
+    color: white;
+}
+.Bshow{
+    display: none;
+}
+
+.best{
+    position: absolute;
+    top: 32px;
+    left: 400px;
+    width: 284px;
+    height: 86px;
+    background: url(images/ui2.png) no-repeat left top;
+    background-size: 100% 100%;
+}
+#bestnum{
+    position: absolute;
+    top: 16px;
+    left: 66px;
+    font-family: 'KaiTi';
+    font-size: 44px;
+    color: white;
+}
+.Best{
+    display: none;
+}
+
+.game{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    width: 566px;
+    height: 332px;
+    background: url(images/15.jpg) no-repeat left top;
+    background-size: 100% 100%;
+}
+.Game{
+    display: none;
+}
+
+.start{
+    opacity: 1;
+    position: absolute;
+    top: 600px;
+    left: 280px;
+    width: 390px;
+    height: 94px;
+    border: 0px;
+    background: url(images/newgame.png) no-repeat left top;
+    background-size: 100% 100%;
+    outline: none;
+}
+button.start:hover{
+    color: red;
+}
+.Start{
+    display: none;
+}
+
+.blue{
+    position: absolute;
+    top: 400px;
+    left: 640px;
+    width: 300px;
+    height: 300px;
+    background: url(images/10.jpg) no-repeat left top;
+    background-size: 100% 100%;
+    opacity: 1;
+}
+
+.green{
+    position: absolute;
+    top: 280px;
+    left: 360px;
+    width: 300px;
+    height: 300px;
+    background: url(images/11.jpg) no-repeat left top;
+    background-size: 100% 100%;
+    opacity: 1;
+}
+
+.purple{
+    position: absolute;
+    top: 560px;
+    left: 100px;
+    width: 300px;
+    height: 300px;
+    background: url(images/12.jpg) no-repeat left top;
+    background-size: 100% 100%;
+    opacity: 1;
+}
+
+.red{
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    width: 300px;
+    height: 300px;
+    background: url(images/13.jpg) no-repeat left top;
+    background-size: 100% 100%;
+    opacity: 1;
+}
+
+.yellow{
+    position: absolute;
+    top: 760px;
+    left: 500px;
+    width: 300px;
+    height: 300px;
+    background: url(images/14.jpg) no-repeat left top;
+    background-size: 100% 100%;
+    opacity: 1;
+}
+
+#five_color.Five{
+    display: none;
+}
+
+.goal{
+    display: none;
+}
+.Goal{
+    opacity: 1;
+    position: absolute;
+    top: 40px;
+    left: 200px;
+    font-family: 'KaiTi';
+    font-size: 44px;
+    color: white;
+}
+
+.score{
+    display: none;
+}
+.Score{
+    position: absolute;
+    top: 116px;
+    left: 420px;
+    font-family: 'KaiTi';
+    font-size: 52px;
+    color: white;
+}
+
+.showadd{
+    position: absolute;
+    top: 180px;
+    left: 370px;
+    font-family: 'KaiTi';
+    font-size: 40px;
+    color: yellow;
+}
+
+.passlevel{
+    display: none;
+}
+.passLevel{
+    position: absolute;
+    top: 380px;
+    left: 260px;
+    width: 530px;
+    height: 316px;
+    background: url(images/stage_clear.png) no-repeat left top;
+    background-size: 100% 100%;
+}
+
+.clock{
+    display: none;
+}
+.Clock{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    width: 166px;
+    height: 166px;
+    background: url(images/clock.png) no-repeat left top;
+    background-size: 100% 100%;
+}
+
+.showclock{
+    display: none;
+}
+.showClock{
+    position: absolute;
+    top: 56px;
+    left: 56px;
+    font-family: 'KaiTi';
+    font-size: 50px;
+}
+
+.cheerpicture{
+    display: none;
+}
+.cheerPicture{
+    opacity: 1;
+    position: absolute;
+    top: 360px;
+    left: 60px;
+    width: 870px;
+    height: 202px;
+    background: url(images/4.jpg) no-repeat left top;
+    background-size: 100% 100%;
+}
+
+.awardshow{
+    position: absolute;
+    top: 600px;
+    left: 300px;
+    font-family: 'KaiTi';
+    font-size: 40px;
+    color: white;
+}
+
+.end{
+    display: none;
+}
+.End{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1000px;
+    height: 1300px;
+    background: url(images/bg_mainscene.jpg) no-repeat left top;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.showendscore{
+    display: none;
+}
+.Showendscore{
+    position: absolute;
+    top: 520px;
+    left: 380px;
+    font-family: "KaiTi";
+    font-size: 52px;
+    color: white;
+    z-index: 2;
+}
+
+.showendbest{
+    display: none;
+}
+.Showendbest{
+    position: absolute;
+    top: 600px;
+    left: 300px;
+    font-family: "Yu Gothic Medium";
+    font-size: 48px;
+    color: white;
+    z-index: 2;
+}
+
+button.playmusic{
+    position: absolute;
+    top: 40px;
+    left: 840px;
+    width: 98px;
+    height: 94px;
+    border: 0px;
+    background: url(images/menu_sound_on.png) no-repeat left top;
+    background-size: 100% 100%;
+    outline: none;
+    z-index: 2;
+}
+
+button.maxlength{
+    position: absolute;
+    top: 40px;
+    left: 720px;
+    width: 98px;
+    height: 94px;
+    border: 0px;
+    background: url(images/menu_help.png) no-repeat left top;
+    background-size: 100% 100%;
+    outline: none;
+    z-index: 2;
+}
+
+button.resume{
+    display: none;
+}
+button.Resume{
+    opacity: 1;
+    position: absolute;
+    top: 800px;
+    left: 160px;
+    width: 300px;
+    height: 100px;
+    border: 0px;
+    background: url(images/button1.png) no-repeat left top;
+    background-size: 100% 100%;
+    outline: none;
+    z-index: 3;
+    font-size: 40px;
+    font-family: 'KaiTi';
+    color: white;
+    font-weight: bold;
+}
+button.Resume:hover{
+    background: url(images/button2.png) no-repeat left top;
+    background-size: 100% 100%;
+}
+
+button.continuepass{
+    display: none;
+}
+button.Continuepass{
+    opacity: 1;
+    position: absolute;
+    top: 800px;
+    left: 540px;
+    width: 300px;
+    height: 100px;
+    border: 0px;
+    background: url(images/button1.png) no-repeat left top;
+    background-size: 100% 100%;
+    outline: none;
+    z-index: 3;
+    font-size: 40px;
+    font-family: 'KaiTi';
+    color: white;
+    font-weight: bold;
+}
+button.Continuepass:hover{
+    background: url(images/button2.png) no-repeat left top;
+    background-size: 100% 100%;
+}

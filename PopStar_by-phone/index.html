@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">                 <!--清除浏览器中的缓存-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>PopStar消灭星星小游戏</title>
+    <script type="text/javascript">
+/*动态加载css*/
+if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))) {
+    document.write('<link rel="stylesheet" type="text/css" href="PopStar-phone.css">');
+}
+else{
+    document.write('<link rel="stylesheet" type="text/css" href="PopStar.css"/>');
+}
+	</script>
+    <script src="jquery-1.7.1.min.js"></script>
+    <script type = "text/javascript" src="PopStar.js"></script>
+  </head>
+
+  <body>
+    <div id = "center">
+      <div id="bg_main"></div>
+      <div id="show"></div>
+      <div id = "showTarget"></div>
+
+      <div id="container">
+        <div id="bg-container"></div>
+      </div>
+      
+      <div id="bs" class="bshow">最高分</div>
+      <div id="bestscore" class="best">
+        <div id="bestnum">0</div>
+      </div>
+      <div id="gameName" class="game"></div>
+      <div id="five_color" class="five">
+        <div id="blue_star" class="blue"></div>
+        <div id="green_star" class="green"></div>
+        <div id="purple_star" class="purple"></div>
+        <div id="red_star" class="red"></div>
+        <div id="yellow_star" class="yellow"></div>
+      </div>
+      
+      <div id="show-goal" class="goal"></div>
+      <div id="show-score" class="score"></div>
+      <div id="addscore" class="showadd"></div>
+      <div id="passed" class="passlevel"></div>
+
+      <div id="clockcontrol" class="clock">
+        <div id="clocknum" class="showclock"></div>
+      </div>
+
+      <div id="cheer" class="cheerpicture"></div>
+      <div id="award" class="awardshow"></div>
+
+      <div id="endpicture" class="end"></div>
+      <div id="endscore" class="showendscore">SCORE</div>
+      <div id="endbest" class="showendbest"></div>
+
+      <audio id="bg-music" src="sound/classicbg.ogg" loop></audio>
+      <audio id="music" src="sound/ppop.ogg"></audio>
+      <audio id="cheer-music" src="sound/cheer.ogg"></audio>
+      <audio id="button-music" src="sound/click.mp3"></audio>
+      <audio id="pass-music" src="sound/win.mp3"></audio>
+      <button id="toplay" class="start" onclick="startplay();"></button>
+      <button id="changemusic" class="playmusic" onclick="changemusic();"></button>
+
+      <button id="showmaxlen" class="maxlength" onclick="prompt();"></button>
+      <button id="restart" class="resume" onclick="returnstart();">返回首页</button>
+      <button id="continue" class="continuepass" onclick="tocontinue();">继续通关</button>
+
+    </div>
+  </body>
+</html>
